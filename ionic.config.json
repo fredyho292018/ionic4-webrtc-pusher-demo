@@ -1,5 +1,7 @@
 {
   "name": "pollApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

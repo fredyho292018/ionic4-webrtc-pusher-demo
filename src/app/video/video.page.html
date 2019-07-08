@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>video</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content text-center>
+    <h1>Mi id</h1>
+    <span>{{id}}</span>
+    <ion-list>
+        <ion-item *ngFor="let item of users">
+            <ion-label>{{item}}</ion-label>
+            <ion-button (click)="callUser(item)">Llamar</ion-button>
+
+        </ion-item>
+    </ion-list>
+    <ion-button *ngIf="room!=null" (click)="endCurrentCall()">En call</ion-button>
+    <div *ngIf="streamenremote!=null">
+        remote
+        <video class="selfremote" [srcObject]="streamenremote" autoplay></video>
+    </div>
+    <div *ngIf="streamenlocal!=null">
+        local
+        <video class="selfview" [muted]="'muted'" [srcObject]="streamenlocal" autoplay></video>
+    </div>
+</ion-content>
