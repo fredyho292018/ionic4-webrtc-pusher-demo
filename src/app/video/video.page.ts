@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PusherServiceService } from '../pusher-service.service';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { _document } from '@angular/platform-browser/src/browser';
-import { runInThisContext } from 'vm';
+
 declare var window: any;
 declare var document: any;
 @Component({
