@@ -28,7 +28,7 @@
     "cordova-android": "8.0.0",
     "core-js": "^2.5.4",
     "dotenv": "^8.0.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "pusher": "^2.2.0",
     "rxjs": "~6.5.1",
     "tslib": "^1.9.0",
